@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"go-essentials/fileops"
+)
 
 func main() {
-	balance, err := read_from_file()
+	balance, err := fileops.ReadFloatFromFile("balance.txt")
 
 	if err != nil {
 		fmt.Println(err)
@@ -11,5 +14,5 @@ func main() {
 
 	fmt.Println(balance)
 
-	write_to_file(100000)
+	fileops.WriteFloatToFile(100000)
 }
