@@ -13,6 +13,10 @@ type user struct {
 	createdAt time.Time
 }
 
+func (u user) getUserDetails() {
+	fmt.Println(u.firstName, u.lastName)
+}
+
 func main() {
 	balance, err := fileops.ReadFloatFromFile("balance.txt")
 
@@ -33,5 +37,5 @@ func main() {
 		createdAt: time.Now(),
 	}
 
-	fmt.Println(appUser)
+	appUser.getUserDetails()
 }
