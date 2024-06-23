@@ -13,6 +13,7 @@ type user struct {
 	createdAt time.Time
 }
 
+// the param is called a reciever argument
 func (u user) getUserDetails() {
 	fmt.Println(u.firstName, u.lastName)
 }
