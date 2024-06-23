@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	using_switch_statements()
+	write_to_file(1000)
 }
