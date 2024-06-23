@@ -1,6 +1,5 @@
 package main
 
 func main() {
-	calculate_investment()
-	calculate_profit()
+	using_switch_statements()
 }
