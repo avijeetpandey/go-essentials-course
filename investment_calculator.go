@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func main() {
+func calculate_investment() {
 	var inflationRate float64
 	var investmentAmount float64
 	var years float64
